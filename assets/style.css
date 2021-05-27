@@ -543,6 +543,9 @@ input[type="text"]:focus-visible {
     top: 0.6rem;
     right: 2rem;
   }
+  .filter-heading {
+    margin-right: 0.7rem;
+  }
   .nav_links {
     padding-left: 2rem;
     padding-top: 0.5rem;
@@ -577,7 +580,7 @@ input[type="text"]:focus-visible {
   }
   /* Grid */
   .grid {
-    margin: 5rem;
+    margin: 2rem;
     margin-top: 2rem;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -594,6 +597,17 @@ input[type="text"]:focus-visible {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .scroll {
+    position: fixed;
+    color: #6ebbd3;
+    font-size: 3rem;
+    bottom: 3rem;
+    right: 0.1rem;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
   }
   .footer-column-1 {
     -ms-grid-column: 1;
