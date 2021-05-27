@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alef task</title>
+    <!-- icons stylesheet   -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Starts here  -->
+    <div class="navbar">
+      <header>
+        <nav>
+          <img src="/assets/images/logo.svg" class="logo" alt="" />
+          <span class="menu-btn">
+            <span class="menu-btn__burger"></span>
+          </span>
+        </nav>
+        <nav class="nav-div">
+          <ul class="nav_links">
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-div grid-column">
+          <p class="phone">+544 3390 00000</p>
+          <p class="subtext-phone">Звони скорее</p>
+        </nav>
+      </header>
+      <div class="header-text">
+        <a href="#"> Найдено 349 котов</a>
+      </div>
+    </div>
+    <!-- Filter section starts here  -->
+    <div class="filter">
+      <strong class="filter-heading">Сортировать по :</strong>
+
+      <button id="priceTag" class="filter-tag">
+        Цене
+        <img
+          src="/assets/images/up.svg"
+          id="price-filter"
+          class="up-icon"
+          alt=""
+        /></button
+      ><button id="ageTag" class="filter-tag">
+        Возрасту
+        <img
+          src="/assets/images/up.svg"
+          id="age-filter"
+          class="up-icon"
+          alt=""
+        />
+      </button>
+    </div>
+    <!-- Card Grid Starts from here  -->
+    <div id="grid" class="grid">
+      <div class="card hide">
+        <div class="card-image-div">
+          <span class="tag">-40%</span>
+          <img src="/assets/images/cat.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 1</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">30000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat2.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart heart-2"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 2</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">1</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">40000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Продан</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat3.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 3</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">20000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat4.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 4</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">25000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <span class="tag">-40%</span>
+          <img src="/assets/images/cat5.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 5</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">30000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat6.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 6</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">40000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <span class="tag">-40%</span>
+          <img src="/assets/images/cat5.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 5</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">30000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat6.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 6</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">2000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <span class="tag">-40%</span>
+          <img src="/assets/images/cat.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 1</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">3000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat2.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart heart-2"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 2</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">1</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">15000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Продан</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat3.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 3</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">20000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat4.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 4</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">25000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <span class="tag">-40%</span>
+          <img src="/assets/images/cat5.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 5</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">1</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">30000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat6.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 6</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">40000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Продан</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <span class="tag">-40%</span>
+          <img src="/assets/images/cat.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 1</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">3</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">30000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat2.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart heart-2"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 2</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">1</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">40000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Продан</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat3.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 3</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">1</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">20000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat4.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 4</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">25000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <span class="tag">-40%</span>
+          <img src="/assets/images/cat5.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 5</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">1</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">30000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat6.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 6</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">40000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <span class="tag">-40%</span>
+          <img src="/assets/images/cat.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 1</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">30000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat2.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart heart-2"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 2</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">1</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">40000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Продан</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat3.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 3</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">8000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Продан</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat4.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 4</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">25000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <span class="tag">-40%</span>
+          <img src="/assets/images/cat5.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 5</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">1</strong>
+            <strong>мес.</strong>
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">30000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+      <div class="card hide">
+        <div class="card-image-div">
+          <img src="/assets/images/cat6.png" class="card-image" alt="" />
+
+          <i title="Add to Favorites" class="bx bxs-heart heart"></i>
+        </div>
+        <div class="card-title">
+          <p class="card-title-text cat-name">Кот полосатый 6</p>
+        </div>
+        <div class="card-description">
+          <div><span class="card-des-text">Коричневый окрас</span></div>
+          <div>
+            <strong class="age">2</strong>
+            <strong>мес.</strong>
+
+            <p class="card-des-text">Возраст</p>
+          </div>
+          <div>
+            <strong>4</strong>
+            <p class="card-des-text">Кол-во лап</p>
+          </div>
+        </div>
+        <div class="card-title">
+          <div class="card-title-text">
+            <span class="cat-price">40000</span> <span>руб.</span>
+          </div>
+        </div>
+        <button class="card-button">Купить</button>
+      </div>
+    </div>
+    <!-- Load more button for lazy loading  -->
+    <div class="loadmore" id="load">
+      <button id="load-button">Показать еще 10</button>
+    </div>
+    <!-- Scroll to top & smooth scrolling  -->
+    <div class="scroll-button">
+      <a id="scroll" href="#" class="scroll">
+        <i class="bx bxs-chevron-up-square bx-tada-hover"></i
+      ></a>
+    </div>
+    <!-- Footer Starts Here  -->
+    <div class="footer">
+      <div class="footer-column-1">
+        <p class="footer-heading">Успей купить!</p>
+        <p class="footer-subtext">Подпишись и успей словить все акции</p>
+      </div>
+      <div class="footer-column-2">
+        <form action="">
+          <input type="text" id="email" placeholder="Email" />
+          <button id="submit" class="footer-button">Подписаться</button>
+          <div class="checkbox">
+            <label class="container">
+              <input type="checkbox" id="check" />Подписаться на новости
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Main javascript file  -->
+    <script src="/assets/main.js"></script>
+    <!-- Alert script for sweet alert  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
