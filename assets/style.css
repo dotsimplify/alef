@@ -545,6 +545,7 @@ input[type="text"]:focus-visible {
   }
   .filter-heading {
     margin-right: 0.7rem;
+    font-size: 0.8rem;
   }
   .nav_links {
     padding-left: 2rem;
